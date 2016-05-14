@@ -13,7 +13,6 @@ def main():
         second = temp
         # Every third fibbonachi number is even
         if count%3 ==0:
-            print second
             sumOfEvens +=second
     print sumOfEvens
 
