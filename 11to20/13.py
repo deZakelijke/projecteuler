@@ -3,6 +3,6 @@ def main():
     totalSum = 0
     for line in f:
         totalSum += int(line[0:-1])
-    print totalSum
+    print(totalSum)
 
 main()

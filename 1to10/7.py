@@ -1,3 +1,4 @@
+# Is a brute force method, do not use for anything else
 def main(n):
     primes = [2,3]
     # We start at five, because sqrt(5) > 2
@@ -10,7 +11,6 @@ def main(n):
                 if integer%primes[i] == 0:
                     break
         else:
-            print 'prime: ', integer
             primes.append(integer)
         integer += 2
     print len(primes)

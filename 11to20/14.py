@@ -18,7 +18,7 @@ def main(n):
         if sequence > maxSequence:
             maxSequence = sequence
             maxN = i
-    print maxSequence
-    print maxN
+    print(maxSequence)
+    print(maxN)
 
 main(1000000)

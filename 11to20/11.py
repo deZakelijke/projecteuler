@@ -38,6 +38,6 @@ def main():
 
 
 
-    print maxProduct
+    print(maxProduct)
 
 main()

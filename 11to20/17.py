@@ -41,8 +41,8 @@ def main(n):
                 stringI = stringI[1]
         if len(stringI) == 1 and int(stringI) != 0:
             sumOfLetters += oneToNine(int(stringI[0]))
-        print i
-    print sumOfLetters
+        print(i)
+    print(sumOfLetters)
 
 main(1000)
              

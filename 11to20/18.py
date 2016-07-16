@@ -1,3 +1,4 @@
+# Only one of 11 to 20 made in python 2, wasn't in the mood to rewrite more than a few lines
 import sys
 
 # Reads the test file and converts it to a 2x2 list

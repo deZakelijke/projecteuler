@@ -29,7 +29,6 @@ def main():
             temp.append(fact1)
             temp.append(fact2)
     factors = sorted(factors)
-    print factors[0]
     print factors[-1]
 
 main()
