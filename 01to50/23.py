@@ -24,32 +24,32 @@ def abundant(n):
 def findSum(n, numberList):
     if n%2==0:
         for i in range(len(numberList[0])):
-            if i >n:
+            if numberList[0][i] >n:
                 break
             for j in range(i, len(numberList[0])):
-                if j > n:
+                if numberList[0][j] > n:
                     break
                 if numberList[0][i] + numberList[0][j] == n:
-                    return True
+                    return False
         for i in range(len(numberList[1])):
-            if i >n:
+            if numberList[0][i] >n:
                 break
             for j in range(i, len(numberList[1])):
-                if j > n:
+                if numberList[0][j] > n:
                     break
                 if numberList[1][i] + numberList[1][j] == n:
-                    return True
+                    return False
 
     else:
         for i in range(len(numberList[0])):
-            if i>n:
+            if numberList[0][i] >n:
                 break
             for j in range(len(numberList[1])):
-                if j>n:
+                if numberList[1][j] > n:
                     break
                 if numberList[0][i] + numberList[1][j] == n:
-                    return True
-    return False
+                    return False
+    return True
 
 def main():
     maxNumber = 28123
@@ -65,9 +65,11 @@ def main():
     print('List complete')
 
 
-    for i in range(22, maxNumber+1):
+    for i in range(maxNumber+1):
         if findSum(i, abundantNumbers):
             totalSum += i
+        if i%1000 ==0:
+            print(i)
     print(totalSum)
 
 
