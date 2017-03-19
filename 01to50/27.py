@@ -47,10 +47,19 @@ def main():
             sequenceLengths[i-1].append(primeRange)
 
     maxA = 0
-    maxAIndex = 0
     maxB = 0
-    maxBIndex = 0
-    for i in range(len(sequenceLengths)):
-        continue
+    maxValue = 0
+    for sequenceLength in sequenceLengths:
+        for value in sequenceLength:
+            if value > maxValue:
+                maxValue = value
+                maxA = sequenceLengths.index(sequenceLength)+1
+                maxB = bList[sequenceLength.index(value)+1]
+
+    print('a: ', maxA)
+    print('b: ', maxB)
+    print('Product: ', maxA*maxB)
+    print(primeSequence(maxA, maxB))
+
 
 main()
